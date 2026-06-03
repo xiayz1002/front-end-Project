@@ -1,0 +1,42 @@
+h1 {
+    color: #2ecc71; /* 好看的翠绿色 */
+}
+ul li {
+    color: #34495e; /* 深灰色 */
+    font-size: 18px; /* 字体放大 */
+}
+
+/*第一种选择器：所有同名标签*/
+/* 第二章：类选择器：在标签内添加 class 属性 */
+.green {
+    color: #2ecc71; /* 好看的翠绿色 */
+}
+
+.finish-step {
+   color: #2ecc71;
+}
+
+/*第三种选择器：ID 选择器：在标签内添加 id 属性 */
+#aaa {
+    color: #e74c3c; /* 鲜艳的红色 */
+    font-weight: bold; /* 加粗 */
+}
+/* 前面是#符号 */
+/* ID 选择器 > 类选择器 > 标签选择器 */
+
+/* 我们可以把表单 form 当成一个大盒子来装扮 */
+form {
+    background-color: #f8f9fa; /* 给表单加个淡淡的灰色背景 */
+    
+    /* 1. Border：盒子的硬外壳（边框：宽2像素，实线，灰色） */
+    border: 2px solid #ccc; 
+    
+    /* 2. Padding：内边距（内容和边框之间的距离，让里面的字别挨外壳太紧） */
+    padding: 20px; 
+    
+    /* 3. Margin：外边距（这个表单盒子和上面的文字段落之间，隔开40像素的空隙） */
+    margin-top: 40px; 
+    
+    /* 4. Width：控制盒子的总宽度 */
+    width: 300px; 
+}
