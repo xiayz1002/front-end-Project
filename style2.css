@@ -1,0 +1,61 @@
+/* 1. 初始化，清除默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 还记得这个好习惯吗？ */
+}
+
+body {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* 2. 爸爸盒子（Flex 容器） */
+.parent-box {
+    background-color: #eee; /* 灰色背景，方便看清范围 */
+    padding: 20px;
+    border: 2px solid #ccc;
+    
+    /* 开启 Flex 魔法！一旦开启，子元素默认水平排列 */
+    display: flex; 
+    
+    /* 【控制左右对齐方式】(主轴对齐) */
+    /* 常用值有：
+       flex-start: 靠左对齐（默认）
+       flex-end: 靠右对齐
+       center: 居中对齐
+       space-between: 左右贴边，中间平均分配空隙
+       space-around: 孩子两边平均分配空隙
+    */
+    justify-content: space-between; 
+    
+    /* 【控制上下对齐方式】(交叉轴对齐) */
+    /* center 表示让孩子们在垂直方向上居中对齐 */
+    align-items: center; 
+    
+    /* 给爸爸设个高度，方便看垂直居中的效果 */
+    height: 200px; 
+}
+
+/* 3. 孩子盒子的公共样式 */
+.child {
+    width: 80px;
+    height: 80px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    
+    /* 让孩子盒子里的数字也居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 4. 给孩子们穿上不同颜色的衣服 */
+.red { background-color: #e74c3c; }
+.blue { background-color: #3498db; }
+.green { background-color: #2ecc71; }
